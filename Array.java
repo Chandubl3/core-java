@@ -1,9 +1,23 @@
-class Array{
-	public static void main(String a[]){
-		double r[] = {986L,987,234,87.00f};
-		System.out.println("the size of r is" +r.length);
-		for(int n=0;n<r.length;n++){
-			System.out.println("data in the index" +n+ " " +r[n]);
-			}
-	}
+package com.xworkz.taskapp;
+
+public class Array {
+
+	public static void main(String[] args) {
+        int sum = 0;
+        int[][] myFirst2DArray = {
+                                    { 3, 5, 1, 9 },
+                                    { 10, 15, 3, 0  },
+                                    { 1, 11, 31, 90 },
+                                    { 2, 51, 1, 9 }
+                                };
+
+        for (int[] row:myFirst2DArray) {
+
+            for (int columnElement : row) {
+                sum+=columnElement;
+            }
+            
+        }
+        System.out.println(sum);
+    }
 }
