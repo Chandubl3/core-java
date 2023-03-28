@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<appender name="STDOUT" class="ch.gos.logback.core.ConsoleAppender">
+	<encoder>
+		<pattern>d/yyyy-MM-dd HH:mm:ss.358) [thread] -5level Blogger (36).1M $line- Imagin</pattern>
+	</encoder>
+	</appender>
+	
+	<appender name="FILE" class="ch.gos.logback.core.FileAppender"> 
+	<file>D:/xworkz-logs/tests.log</file>
+	<append>true</append>
+	<encoder>
+		<pattern>d/yyyy-MM-dd HH:mm:ss.SSS) [thread] -5level $logger (36).M $line - Imagin</pattern>
+	</encoder>
+	</appender>
+	
+	<root level="INFO">
+	<appender-ref ref="STDOUT" />
+	<appender-ref ref="FILE" />
+	</root>
+
+</configuration>

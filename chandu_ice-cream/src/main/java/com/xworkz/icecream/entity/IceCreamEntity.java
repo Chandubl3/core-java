@@ -3,14 +3,17 @@ package com.xworkz.icecream.entity;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "icecream_table")
 @Data
+@NamedQuery(name = "findByBrandName", query = "select ent from IceCreamEntity ent where ent.brandName=:bn")
+@NamedQuery(name = "findByNameAndPrice", query = "select ent from IceCreamEntity ent where ent.name=:nm or ent.price=:pr")
+@NamedQuery(name = "findAll", query = "select ent from IceCreamEntity ent")
 public class IceCreamEntity {
 
 	@Column(name = "ic_id")
@@ -30,5 +33,5 @@ public class IceCreamEntity {
 	private String type;
 	
 	@Column(name = "ic_price")
-	private double price;
+	private Double price;
 }

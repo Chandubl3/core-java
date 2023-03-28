@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class IceCreamDTO {
 
+	private int id;
 	@NotBlank(message = "Place should be selected")
 	private String name;
 	

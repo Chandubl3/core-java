@@ -12,24 +12,25 @@
 </head>
 <body>
 
-<nav class="navbar navbar-light bg-light">
+<nav class="navbar navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-   	<img alt="" src="https://t4.ftcdn.net/jpg/02/17/36/83/360_F_217368346_U0trhJeBSG7M9feVwW073Eb3m9j5CIcW.jpg" width="150" height="100" class="d-inline-block align-text-top">
+    <img alt="" src="https://t4.ftcdn.net/jpg/02/17/36/83/360_F_217368346_U0trhJeBSG7M9feVwW073Eb3m9j5CIcW.jpg" width="100" height="100">
+    <marquee><h1 class="text-uppercase">Welcome to IceCream Parlor.....</h1></marquee>
     </a>
-    <a href="icecream">Select</a>
-     <a href="index.jsp">Home</a>
-  </div>
-</nav>
-<h1>Select is Success.....</h1>
-
-<h3>
-	 	Name: ${dto.getName()}<br>
-		BrandName: ${dto.getBrandName()} <br>
-		Color: ${dto.getColor()} <br>
-		Type: ${dto.getType()} <br>
-		Price: ${dto.getPrice()}
-</h3>
-
+    <a href="index.jsp">Home</a>
+   </div>
+  </nav>
+  
+  <div class="typing">
+        <h2 class="text-uppercase">Uploading Image.....</h2>
+    </div>
+  
+  <form action="upload" method="post" enctype="multipart/form-data">
+  <div class="mb-3">
+  <input class="form-control" type="file" id="formFile" name="pic"/>
+  <input type="submit" value="upload">
+</div>
+</form>
 </body>
 </html>

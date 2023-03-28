@@ -1,9 +1,0 @@
-com\xworkz\icecream\configuration\IceCreamConfiguration.class
-com\xworkz\icecream\entity\IceCreamEntity.class
-com\xworkz\icecream\configuration\IceCreamWebInit.class
-com\xworkz\icecream\service\IceCreamService.class
-com\xworkz\icecream\controller\IceCreamController.class
-com\xworkz\icecream\service\IceCreamServiceImpl.class
-com\xworkz\icecream\dto\IceCreamDTO.class
-com\xworkz\icecream\repository\IceCreamRepository.class
-com\xworkz\icecream\repository\IceCreamRepositoryImpl.class

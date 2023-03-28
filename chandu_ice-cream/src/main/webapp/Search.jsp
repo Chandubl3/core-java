@@ -12,29 +12,60 @@
 </head>
 <body>
 
-<nav class="navbar navbar-light bg-light">
+<nav class="navbar navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-   	<img alt="" src="https://t4.ftcdn.net/jpg/02/17/36/83/360_F_217368346_U0trhJeBSG7M9feVwW073Eb3m9j5CIcW.jpg" width="150" height="100" class="d-inline-block align-text-top">
+    <img alt="" src="https://t4.ftcdn.net/jpg/02/17/36/83/360_F_217368346_U0trhJeBSG7M9feVwW073Eb3m9j5CIcW.jpg" width="100" height="100">
+    <marquee><h1 class="text-uppercase">Welcome to IceCream Parlor.....</h1></marquee>
     </a>
-    <a href="icecream">Select</a>
-     <a href="index.jsp">Home</a>
+    <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Selete
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <li><a class="dropdown-item" href="icecream">Save</a></li>
+      <li><a class="dropdown-item" href="index.jsp">Home</a></li>
+    </ul>
+    </div>
+  
   </div>
 </nav>
-<h1>Searching.....</h1>
 
+<div class="typing">
+        <h2 class="text-uppercase">Searching By Id.....</h2>
+    </div>
+    
 <form action="search">
-		Search By Id : <input type="text" name="id" required="required"/>
-		<input type="submit" value="Search"/>
-	</form>
-	<h3>
-		<span style="">The Searched results are: </span><br>
-		<span style="color: blue;">Name: </span>${dto.getName()} <br>
-		<span style="color: blue;">BrandName: </span>${dto.getBrandName()} <br>
-		<span style="color: blue;">Color: </span>${dto.getColor()} <br>
-		<span style="color: blue;">Type: </span>${dto.getType()} <br>
-		<span style="color: blue;">Price: </span>${dto.getPrice()}
-	</h3>
+	<div class="input-group mb-3">
+	<input type="text" name="id" required="required"/>
+	<input type="submit" value="Search"/>
+	</div>
+</form>
+		<h4>The Searched results are: </h4><br>
+		<div class="input-group mb-3">
+			<label class="input-group-text" for="inputGroupSelect01">Name</label>
+	 		<label class="input-group-text" for="inputGroupSelect01">${dto.getName()}</label>
+	 	</div>
+	 	
+	 	<div class="input-group mb-3">
+			<label class="input-group-text" for="inputGroupSelect01">BrandName</label>
+	 		<label class="input-group-text" for="inputGroupSelect01">${dto.getBrandName()}</label>
+	 	</div>
+	 	
+	 	<div class="input-group mb-3">
+			<label class="input-group-text" for="inputGroupSelect01">Color</label>
+	 		<label class="input-group-text" for="inputGroupSelect01">${dto.getColor()}</label>
+	 	</div>
+	 	
+	 	<div class="input-group mb-3">
+			<label class="input-group-text" for="inputGroupSelect01">Type</label>
+	 		<label class="input-group-text" for="inputGroupSelect01">${dto.getType()}</label>
+	 	</div>
+	 	
+	 	<div class="input-group mb-3">
+			<label class="input-group-text" for="inputGroupSelect01">Price</label>
+	 		<label class="input-group-text" for="inputGroupSelect01">${dto.getPrice()}</label>
+	 	</div>
 
 </body>
 </html>
